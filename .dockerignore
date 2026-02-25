@@ -1,0 +1,29 @@
+venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+frontend/
+_pipeline_scripts/
+*.md
+*.ipynb
+
+# Non-runtime data (only keep the 4 essential files)
+data/embedding_cache.pkl
+data/embedding_cache1.pkl
+data/embedding_cache_OLD.pkl
+data/chunk_texts.json
+data/chunks_all.json
+data/documents.json
+data/raw_corpus.txt
+data/chunk_samples.json
+data/pipeline_stats.json
+data/*_OLD.*
+
+# Test files
+backend/tests/
+
+# Editor files
+.vscode/
+*.swp
+*.swo

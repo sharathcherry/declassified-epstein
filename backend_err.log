@@ -1,0 +1,20 @@
+INFO:     Started server process [4448]
+INFO:     Waiting for application startup.
+07:26:22 [backend.main] INFO: [loading] Loading dataset from HuggingFace...
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+07:26:22 [backend.ingestion.loader] INFO: Loading cached parsed documents...
+07:26:23 [backend.ingestion.loader] INFO: Loaded 25,793 documents from cache
+07:26:23 [backend.main] INFO: [loading] Loaded 25,793 documents
+07:26:23 [backend.main] INFO: [cleaning] Cleaning OCR text...
+07:26:26 [backend.ingestion.cleaner] INFO: Cleaned 5,000 / 25,793 documents
+07:26:30 [backend.ingestion.cleaner] INFO: Cleaned 10,000 / 25,793 documents
+07:26:35 [backend.ingestion.cleaner] INFO: Cleaned 15,000 / 25,793 documents
+07:26:41 [backend.ingestion.cleaner] INFO: Cleaned 20,000 / 25,793 documents
+07:26:47 [backend.ingestion.cleaner] INFO: Cleaned 25,000 / 25,793 documents
+07:26:48 [backend.ingestion.cleaner] INFO: Cleaning complete: 25,793 docs kept, 0 removed (empty after cleaning)
+07:26:48 [backend.main] INFO: [cleaning] Cleaned 25,793 documents
+07:26:48 [backend.main] INFO: [deduplicating] Removing duplicates...
+07:26:48 [backend.ingestion.deduplicator] INFO: Starting deduplication on 25,793 documents...
+07:27:02 [backend.ingestion.deduplicator] INFO: Removed 455 corrupted documents
+07:27:03 [backend.ingestion.deduplicator] INFO: Removed 8 exact duplicates

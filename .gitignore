@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+node_modules/
+dist/
+.vite/
+*.ipynb_checkpoints/
+
+# Exclude ALL data by default
+data/
+
+# But allow the 4 runtime files (tracked via Git LFS)
+!data/faiss_index.bin
+!data/bm25_index.pkl
+!data/chunk_metadata.pkl
+!data/entity_metadata.json
+
+# Pipeline scripts (archived, not needed in deployment repo)
+_pipeline_scripts/
+
+# Editor
+.vscode/
+*.swp
+.DS_Store
