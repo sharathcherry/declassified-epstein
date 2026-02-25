@@ -6,21 +6,23 @@ venv/
 node_modules/
 dist/
 .vite/
-*.ipynb_checkpoints/
 
-# Exclude ALL data by default
-data/
+# Exclude heavy/non-runtime data files individually
+data/embedding_cache*.pkl
+data/chunk_texts.json
+data/chunks_all.json
+data/documents.json
+data/raw_corpus.txt
+data/chunk_samples.json
+data/pipeline_stats.json
+data/*_OLD.*
+data/metrics.json
 
-# But allow the 4 runtime files (tracked via Git LFS)
-!data/faiss_index.bin
-!data/bm25_index.pkl
-!data/chunk_metadata.pkl
-!data/entity_metadata.json
-
-# Pipeline scripts (archived, not needed in deployment repo)
+# Pipeline scripts (archived)
 _pipeline_scripts/
 
 # Editor
 .vscode/
 *.swp
 .DS_Store
+backend.log
